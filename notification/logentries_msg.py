@@ -16,7 +16,7 @@
 
 DOCUMENTATION = '''
 ---
-module: logentries
+module: logentries_msg
 version_added: "2.1"
 short_description: Send a message to logentries.
 description:
@@ -50,7 +50,7 @@ author: "Jimmy Tang <jimmy_tang@rapid7.com>"
 '''
 
 EXAMPLES = '''
-- logentries:
+- logentries_msg:
     token=00000000-0000-0000-0000-000000000000
     msg="{{ ansible_hostname }}"
 '''
