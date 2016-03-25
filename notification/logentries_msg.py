@@ -17,7 +17,7 @@
 DOCUMENTATION = '''
 ---
 module: logentries_msg
-version_added: "2.1"
+version_added: "2.2"
 short_description: Send a message to logentries.
 description:
    - Send a message to logentries
@@ -48,6 +48,10 @@ options:
 requirements: [ ]
 author: "Jimmy Tang <jimmy_tang@rapid7.com>"
 '''
+
+# TODO: Disabled the RETURN as it was breaking docs building. Someone needs to
+# fix this
+RETURN = '''# '''
 
 EXAMPLES = '''
 - logentries_msg:
