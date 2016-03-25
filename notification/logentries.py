@@ -26,23 +26,27 @@ options:
     description:
       - Log token.
     required: true
+    version_added: "2.1"
   msg:
     description:
       - The message body.
     required: true
     default: null
+    version_added: "2.1"
   api:
     description:
       - API endpoint
     required: false
     default: data.logentries.com
+    version_added: "2.1"
   port:
     description:
       - API endpoint port
     required: false
     default: 10000
+    version_added: "2.1"
 requirements: [ ]
-author: "Jimmy Tang <jimmy.tang@logentries.com>"
+author: "Jimmy Tang <jimmy_tang@rapid7.com>"
 '''
 
 EXAMPLES = '''
