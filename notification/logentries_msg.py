@@ -43,7 +43,7 @@ options:
     description:
       - API endpoint port
     required: false
-    default: 10000
+    default: 80
     version_added: "2.1"
 requirements: [ ]
 author: "Jimmy Tang <jimmy_tang@rapid7.com>"
@@ -81,7 +81,7 @@ def main():
                 token=dict(required=True),
                 msg=dict(required=True),
                 api=dict(default="data.logentries.com"),
-                port=dict(default=10000)
+                port=dict(default=80)
                 ),
             supports_check_mode=False
             )
