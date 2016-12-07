@@ -93,7 +93,7 @@ def main():
 
     try:
         send_msg(module, token, msg, api, port)
-    except Exception, e:
+    except Exception as e:
         module.fail_json(msg="unable to send msg: %s" % e)
 
     changed = True
